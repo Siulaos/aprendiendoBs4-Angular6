@@ -1,13 +1,12 @@
 {
-    "name": "SB-Admin-BS4-Angular-6",
+    "name": "Aprendiendo Bs4 y Angular 6",
     "version": "6.0.0",
     "license": "Apache",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build --prod",
-        "gitbuild":
-            "ng build --prod --base-href /start-angular/SB-Admin-BS4-Angular-6/master/dist/",
+        "gitbuild": "ng build --prod --base-href /start-angular/SB-Admin-BS4-Angular-6/master/dist/",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
@@ -30,6 +29,7 @@
         "core-js": "^2.5.5",
         "font-awesome": "^4.7.0",
         "ng2-charts": "^1.6.0",
+        "node-sass": "^4.9.0",
         "rxjs": "^6.1.0",
         "yarn": "^1.6.0",
         "zone.js": "^0.8.26"

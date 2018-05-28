@@ -18,7 +18,8 @@ import {
     TabsComponent,
     RatingComponent,
     TooltipComponent,
-    TimepickerComponent
+    TimepickerComponent,
+    LoaderComponent
 } from './components';
 import { PageHeaderModule } from '../../shared';
 
@@ -45,7 +46,8 @@ import { PageHeaderModule } from '../../shared';
         TabsComponent,
         RatingComponent,
         TooltipComponent,
-        TimepickerComponent
+        TimepickerComponent,
+        LoaderComponent
     ]
 })
 export class BsComponentModule {}
