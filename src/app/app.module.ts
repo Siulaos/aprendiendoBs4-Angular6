@@ -5,10 +5,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
+import { ValidatorService } from 'app/shared/services/validator/validator.service';
 
 // AoT requires an exported function for factories
 export const createTranslateLoader = (http: HttpClient) => {
@@ -34,10 +35,11 @@ export const createTranslateLoader = (http: HttpClient) => {
                 deps: [HttpClient]
             }
         }),
-        AppRoutingModule
+        AppRoutingModule,
+        ReactiveFormsModule
     ],
     declarations: [AppComponent],
-    providers: [AuthGuard],
+    providers: [AuthGuard, ValidatorService],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
